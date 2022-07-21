@@ -1,0 +1,25 @@
+author: fermuch
+description: LVGL bindings for Mongoose
+version: 1.0
+
+libs_version: ${mos.version}
+modules_version: ${mos.version}
+mongoose_os_version: ${mos.version}
+
+tags:
+  - c
+  - lvgl
+
+sources:
+  - src
+
+# config_schema:
+#  - ["my_app", "o", {title: "My app custom settings"}]
+#  - ["my_app.bool_value", "b", false, {title: "Some boolean value"}]
+#  - ["my_app.string_value", "s", "", {title: "Some string value"}]
+#  - ["my_app.int_value", "i", 123, {title: "Some integer value"}]
+
+# libs:
+#   - origin: https://github.com/mongoose-os-libs/boards
+
+manifest_version: 2017-09-29
