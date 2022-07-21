@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "lvgl.h": "c",
+    "lv_log.h": "c",
+    "lv_conf_internal.h": "c",
+    "lv_math.h": "c"
+  }
+}

@@ -1,6 +1,7 @@
 author: fermuch
 description: LVGL bindings for Mongoose
 version: 1.0
+type: lib
 
 libs_version: ${mos.version}
 modules_version: ${mos.version}
@@ -12,12 +13,141 @@ tags:
 
 sources:
   - src
+  - vendor/lvgl
+  - vendor/lvgl/src
+  - vendor/lvgl/src/misc
+  - vendor/lvgl/src/core
+  - vendor/lvgl/src/hal
+  - vendor/lvgl/src/extra
+  - vendor/lvgl/src/extra/others
+  - vendor/lvgl/src/extra/others/snapshot
+  - vendor/lvgl/src/extra/others/ime
+  - vendor/lvgl/src/extra/others/msg
+  - vendor/lvgl/src/extra/others/fragment
+  - vendor/lvgl/src/extra/others/gridnav
+  - vendor/lvgl/src/extra/others/monkey
+  - vendor/lvgl/src/extra/others/imgfont
+  - vendor/lvgl/src/extra/libs
+  - vendor/lvgl/src/extra/libs/ffmpeg
+  - vendor/lvgl/src/extra/libs/sjpg
+  - vendor/lvgl/src/extra/libs/freetype
+  - vendor/lvgl/src/extra/libs/png
+  - vendor/lvgl/src/extra/libs/qrcode
+  - vendor/lvgl/src/extra/libs/rlottie
+  - vendor/lvgl/src/extra/libs/fsdrv
+  - vendor/lvgl/src/extra/libs/bmp
+  - vendor/lvgl/src/extra/libs/gif
+  - vendor/lvgl/src/extra/layouts
+  - vendor/lvgl/src/extra/layouts/flex
+  - vendor/lvgl/src/extra/layouts/grid
+  - vendor/lvgl/src/extra/themes
+  - vendor/lvgl/src/extra/themes/basic
+  - vendor/lvgl/src/extra/themes/default
+  - vendor/lvgl/src/extra/themes/mono
+  - vendor/lvgl/src/extra/widgets
+  - vendor/lvgl/src/extra/widgets/calendar
+  - vendor/lvgl/src/extra/widgets/led
+  - vendor/lvgl/src/extra/widgets/win
+  - vendor/lvgl/src/extra/widgets/chart
+  - vendor/lvgl/src/extra/widgets/spinbox
+  - vendor/lvgl/src/extra/widgets/imgbtn
+  - vendor/lvgl/src/extra/widgets/spinner
+  - vendor/lvgl/src/extra/widgets/tabview
+  - vendor/lvgl/src/extra/widgets/msgbox
+  - vendor/lvgl/src/extra/widgets/span
+  - vendor/lvgl/src/extra/widgets/colorwheel
+  - vendor/lvgl/src/extra/widgets/list
+  - vendor/lvgl/src/extra/widgets/menu
+  - vendor/lvgl/src/extra/widgets/animimg
+  - vendor/lvgl/src/extra/widgets/meter
+  - vendor/lvgl/src/extra/widgets/tileview
+  - vendor/lvgl/src/extra/widgets/keyboard
+  - vendor/lvgl/src/font
+  - vendor/lvgl/src/draw
+  - vendor/lvgl/src/draw/sw
+  - vendor/lvgl/src/draw/stm32_dma2d
+  - vendor/lvgl/src/draw/nxp
+  - vendor/lvgl/src/draw/nxp/pxp
+  - vendor/lvgl/src/draw/nxp/vglite
+  - vendor/lvgl/src/draw/swm341_dma2d
+  - vendor/lvgl/src/draw/arm2d
+  - vendor/lvgl/src/draw/sdl
+  - vendor/lvgl/src/widgets
 
-# config_schema:
-#  - ["my_app", "o", {title: "My app custom settings"}]
-#  - ["my_app.bool_value", "b", false, {title: "Some boolean value"}]
-#  - ["my_app.string_value", "s", "", {title: "Some string value"}]
-#  - ["my_app.int_value", "i", 123, {title: "Some integer value"}]
+includes:
+  - include
+  - vendor/lvgl
+  - vendor/lvgl/src
+  - vendor/lvgl/src/misc
+  - vendor/lvgl/src/core
+  - vendor/lvgl/src/hal
+  - vendor/lvgl/src/extra
+  - vendor/lvgl/src/extra/others
+  - vendor/lvgl/src/extra/others/snapshot
+  - vendor/lvgl/src/extra/others/ime
+  - vendor/lvgl/src/extra/others/msg
+  - vendor/lvgl/src/extra/others/fragment
+  - vendor/lvgl/src/extra/others/gridnav
+  - vendor/lvgl/src/extra/others/monkey
+  - vendor/lvgl/src/extra/others/imgfont
+  - vendor/lvgl/src/extra/libs
+  - vendor/lvgl/src/extra/libs/ffmpeg
+  - vendor/lvgl/src/extra/libs/sjpg
+  - vendor/lvgl/src/extra/libs/freetype
+  - vendor/lvgl/src/extra/libs/png
+  - vendor/lvgl/src/extra/libs/qrcode
+  - vendor/lvgl/src/extra/libs/rlottie
+  - vendor/lvgl/src/extra/libs/fsdrv
+  - vendor/lvgl/src/extra/libs/bmp
+  - vendor/lvgl/src/extra/libs/gif
+  - vendor/lvgl/src/extra/layouts
+  - vendor/lvgl/src/extra/layouts/flex
+  - vendor/lvgl/src/extra/layouts/grid
+  - vendor/lvgl/src/extra/themes
+  - vendor/lvgl/src/extra/themes/basic
+  - vendor/lvgl/src/extra/themes/default
+  - vendor/lvgl/src/extra/themes/mono
+  - vendor/lvgl/src/extra/widgets
+  - vendor/lvgl/src/extra/widgets/calendar
+  - vendor/lvgl/src/extra/widgets/led
+  - vendor/lvgl/src/extra/widgets/win
+  - vendor/lvgl/src/extra/widgets/chart
+  - vendor/lvgl/src/extra/widgets/spinbox
+  - vendor/lvgl/src/extra/widgets/imgbtn
+  - vendor/lvgl/src/extra/widgets/spinner
+  - vendor/lvgl/src/extra/widgets/tabview
+  - vendor/lvgl/src/extra/widgets/msgbox
+  - vendor/lvgl/src/extra/widgets/span
+  - vendor/lvgl/src/extra/widgets/colorwheel
+  - vendor/lvgl/src/extra/widgets/list
+  - vendor/lvgl/src/extra/widgets/menu
+  - vendor/lvgl/src/extra/widgets/animimg
+  - vendor/lvgl/src/extra/widgets/meter
+  - vendor/lvgl/src/extra/widgets/tileview
+  - vendor/lvgl/src/extra/widgets/keyboard
+  - vendor/lvgl/src/font
+  - vendor/lvgl/src/draw
+  - vendor/lvgl/src/draw/sw
+  - vendor/lvgl/src/draw/stm32_dma2d
+  - vendor/lvgl/src/draw/nxp
+  - vendor/lvgl/src/draw/nxp/pxp
+  - vendor/lvgl/src/draw/nxp/vglite
+  - vendor/lvgl/src/draw/swm341_dma2d
+  - vendor/lvgl/src/draw/arm2d
+  - vendor/lvgl/src/draw/sdl
+  - vendor/lvgl/src/widgets
+
+build_vars:
+  LV_CONF_SKIP: 'y'
+
+cdefs:
+  LV_CONF_SKIP: 'y'
+
+libs:
+  - location: https://github.com/mongoose-os-libs/core
+
+config_schema:
+  - ["lvgl.time_ms", "i", 5, {title: "LVGL timer time in milliseconds"}]
 
 # libs:
 #   - origin: https://github.com/mongoose-os-libs/boards
