@@ -23,7 +23,7 @@ static void lvgl_task_handler_cb(void *arg) {
     (void) arg;
 }
 
-bool mgos_lvgl_init(void) {
+bool mgos_mos_lvgl_init(void) {
   mgos_event_register_base(MGOS_LVGL_BASE, "lvgl");
 
   mgos_event_trigger(MGOS_LVGL_EARLY, NULL);
